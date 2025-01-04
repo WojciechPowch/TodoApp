@@ -1,5 +1,5 @@
 @if(taskList) {
     @for (task of taskList; track $index) {
-        <task-item [taskName]="task.name"></task-item>
+        <tda-task-item [task]="task"></tda-task-item>
     }
 }

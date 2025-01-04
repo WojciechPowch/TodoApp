@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { TaskItemComponent } from '../task-item/task-item.component';
+import { Task } from '../../models/task.model';
 
 @Component({
-  selector: 'app-task-list',
+  selector: 'tda-task-list',
   standalone: true,
   imports: [
     TaskItemComponent
@@ -11,5 +12,5 @@ import { TaskItemComponent } from '../task-item/task-item.component';
   styleUrl: './task-list.component.scss'
 })
 export class TaskListComponent {
-  @Input() taskList?: any[];
+  @Input() taskList!: Task[];
 }
